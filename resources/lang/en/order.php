@@ -1,0 +1,32 @@
+<?php
+return [
+    'clientname'=>'Client Name',
+    'phone'=>'Phone',
+    'price'=>'Price',
+    'address' => 'Address',
+    'shipfees'=> 'Ship Fees',
+    'status'=>'Status',
+    'actions'=>'Actions',
+    'neworder'=>'New',
+    'doneorder' =>'Done',
+    'canceledorder'=>'Canceled',
+    'inprogressorder'=>'In Progress',
+    'addneworder' => 'Add New Order',
+    'assignuser'=>'Assign User',
+    'showallorders'=>'Control Orders',
+    'clientphone'=>'Client Phone',
+    'notes'=>'Notes',
+    'addNewAddress'=>'Add New Address',
+    'addnewproduct'=>'Add another Product',
+    'productname'=>'Product Name',
+    'productsize'=>'Size',
+    'productquantity'=>'Quantity',
+    'delete'=>'Delete',
+    'assignprod'=>'Choose Product',
+    'assignprodsize'=>'Choose Product Size',
+    'addonename'=>'Addone Name',
+    'addnewaddone'=>'Add New Addone',
+    'products'=>'Products',
+    'addons'=>'Addons'
+
+];

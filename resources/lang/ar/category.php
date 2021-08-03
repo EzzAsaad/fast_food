@@ -1,0 +1,25 @@
+<?php
+return[
+  'code'=>'الكود',
+  'categorynamear'=>'اسم القسم بالعربية',
+  'categorynameen'=>'اسم القسم بالانجليزية',
+  'status' =>'الحالة',
+  'active'=>'مفعل',
+  'deactive'=>'معطل',
+  'name'=>'الاسم',
+  'status'=>'الحالة',
+  'actions'=>'التحكم',
+  'addsubcategory'=>'اضافة قسم فرعي',
+  'showallcategories'=>'عرض جميع الاقسام',
+  'addphoto'=>'اضافة صورة',
+  'addnewcategory'=>'اضافة قسم جديد',
+  'send' => 'ارسال',
+  'showcategory'=>'بيانات القسم',
+  'empty'=>'لا يوجد اقسام فرعية',
+   'back' =>'الرجوع',
+    'editcategory'=>'التعديل علي القسم',
+    'deletecategory'=>'مسح القسم',
+    'editcategoryinfo'=>'تعديل بيانات القسم',
+    'delete' => 'حذف',
+    'addsubcat'=>"اضافة اقسام فرعية"
+];

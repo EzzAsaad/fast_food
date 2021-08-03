@@ -1,0 +1,79 @@
+date/time         : 2021-07-12, 09:33:22, 440ms
+computer name     : DESKTOP-2TFV2K4
+user name         : KaseNixon
+registered owner  : KaseNixon
+operating system  : Windows NT New x64 build 9200
+system language   : English
+system up time    : 13 hours 23 minutes
+program up time   : 11 seconds
+processors        : 4x Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz
+physical memory   : 2569/8098 MB (free/total)
+free disk space   : (C:) 53.37 GB
+display mode      : 1366x768, 32 bit
+process id        : $25c0
+allocated memory  : 17.14 MB
+command line      : C:\xampp\sendmail\sendmail.exe -t
+executable        : sendmail.exe
+exec. date/time   : 2012-04-16 19:30
+compiled with     : Delphi 2006/07
+madExcept version : 3.0l
+callstack crc     : $524b9ad3, $91b672ba, $91b672ba
+exception number  : 1
+exception class   : EIdConnectTimeout
+exception message : Connect timed out.
+
+main thread ($31c0):
+0041fa42 +000e sendmail.exe IdException                    112   +1 EIdException.Toss
+0044092e +014e sendmail.exe IdIOHandlerStack               279  +38 DoConnectTimeout
+00440b4c +01d8 sendmail.exe IdIOHandlerStack               346  +55 TIdIOHandlerStack.ConnectClient
+0046554d +0031 sendmail.exe IdSSLOpenSSL                  2086   +8 TIdSSLIOHandlerSocketOpenSSL.ConnectClient
+00444a9f +0063 sendmail.exe IdIOHandlerSocket              335  +13 TIdIOHandlerSocket.Open
+00465637 +0007 sendmail.exe IdSSLOpenSSL                  2122   +1 TIdSSLIOHandlerSocketOpenSSL.Open
+0044157d +0235 sendmail.exe IdTCPClient                    318  +53 TIdTCPClientCustom.Connect
+00445cc8 +00a4 sendmail.exe IdExplicitTLSClientServerBase  257  +23 TIdExplicitTLSClient.Connect
+0045ab7b +0017 sendmail.exe IdSMTP                         373   +2 TIdSMTP.Connect
+004b5f14 +1060 sendmail.exe sendmail                       808 +326 initialization
+75e0fa27 +0017 KERNEL32.DLL                                         BaseThreadInitThunk
+
+thread $2b68:
+75e0fa27 +17 KERNEL32.DLL  BaseThreadInitThunk
+
+thread $23b4:
+75e0fa27 +17 KERNEL32.DLL  BaseThreadInitThunk
+
+thread $2334:
+75e0fa27 +17 KERNEL32.DLL  BaseThreadInitThunk
+
+stack dump:
+0019fcac  47 fa 41 00 de fa ed 0e - 01 00 00 00 07 00 00 00  G.A.............
+0019fcbc  c0 fc 19 00 47 fa 41 00 - e0 51 3b 02 34 b0 43 00  ....G.A..Q;.4.C.
+0019fccc  08 b1 3c 02 44 fd 19 00 - 10 fd 19 00 dc fc 19 00  ..<.D...........
+0019fcdc  7d 00 00 00 00 00 00 00 - 33 09 44 00 f4 fc 19 00  }.......3.D.....
+0019fcec  c8 4b 40 00 10 fd 19 00 - 1c fd 19 00 c8 4b 40 00  .K@..........K@.
+0019fcfc  10 fd 19 00 4b 02 00 00 - 00 00 00 00 00 00 00 00  ....K...........
+0019fd0c  90 27 38 02 48 fd 19 00 - 51 0b 44 00 48 fd 19 00  .'8.H...Q.D.H...
+0019fd1c  50 fd 19 00 c8 4b 40 00 - 48 fd 19 00 b4 4e 4b 00  P....K@.H....NK.
+0019fd2c  10 e8 35 02 10 e8 35 02 - 90 69 3a 02 00 00 00 00  ..5...5..i:.....
+0019fd3c  00 00 00 00 00 00 00 00 - 10 e8 35 02 64 fd 19 00  ..........5.d...
+0019fd4c  52 55 46 00 78 fd 19 00 - c8 4b 40 00 64 fd 19 00  RUF.x....K@.d...
+0019fd5c  b4 4e 4b 01 10 e8 35 02 - ac fd 19 00 a5 4a 44 00  .NK...5......JD.
+0019fd6c  10 e8 35 02 3c 56 46 00 - 83 15 44 00 84 fd 19 00  ..5.<VF...D.....
+0019fd7c  5f 4d 40 00 ac fd 19 00 - d8 fd 19 00 c8 4b 40 00  _M@..........K@.
+0019fd8c  ac fd 19 00 b4 4e 4b 00 - 10 e8 35 02 b0 e6 35 02  .....NK...5...5.
+0019fd9c  12 57 46 00 10 e8 35 02 - 00 00 00 00 b0 e6 35 02  .WF...5.......5.
+0019fdac  d0 fd 19 00 cd 5c 44 00 - b4 4e 4b 00 ff 00 00 00  .....\D..NK.....
+0019fdbc  80 ab 45 00 b4 4e 4b 00 - b4 4e 4b 00 ff 00 00 00  ..E..NK..NK.....
+0019fdcc  b0 e6 35 02 70 ff 19 00 - 1a 5f 4b 00 e4 fd 19 00  ..5.p...._K.....
+0019fddc  c8 4b 40 00 70 ff 19 00 - f0 fd 19 00 c8 4b 40 00  .K@.p........K@.
+
+disassembling:
+[...]
+0041fa38       mov     ebx, eax
+0041fa3a 112   mov     ecx, esi
+0041fa3c       mov     dl, 1
+0041fa3e       mov     eax, ebx
+0041fa40       call    dword ptr [eax]
+0041fa42     > call    -$1ad5b ($404cec)      ; System.@RaiseExcept
+0041fa47 113   pop     esi
+0041fa48       pop     ebx
+0041fa49       ret
